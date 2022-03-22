@@ -5,7 +5,11 @@
 #include <png++/png.hpp>
 #include <tomlPack/toml.hpp>
 
-void InitImage(png::image<png::rgb_pixel> image, auto options);
+#include <iostream>
+#include <stdexcept>
+
+std::vector<int> CheckArrivee(png::image<png::rgb_pixel> image, auto options);
+std::vector<int> CheckDepart(png::image<png::rgb_pixel> image, auto options);
 
 
 
